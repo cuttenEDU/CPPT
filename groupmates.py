@@ -1,3 +1,5 @@
+# coding:UTF-8
+
 groupmates = [
     {
         "name": u"Василий",
