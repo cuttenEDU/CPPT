@@ -1,0 +1,20 @@
+body{
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+input.title{
+    background: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    margin-bottom: 0.5%
+}
+textarea{
+    background: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    margin-bottom: 0.5%
+}
+
+input.title::placeholder, textarea::placeholder{
+    color: #c3c3c3;
+}
