@@ -19,7 +19,7 @@ from articles import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.archive, ),
+    url(r'^$', views.archive, name='home'),
     url(
      r'^article/(?P<article_id>\d+)/$',
      views.get_article,

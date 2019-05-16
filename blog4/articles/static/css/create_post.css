@@ -4,7 +4,7 @@ body{
     color: #ffffff;
 }
 
-input.title{
+input.textinput{
     background: rgba(0, 0, 0, 0.75);
     color: #ffffff;
     margin-bottom: 0.5%
@@ -18,3 +18,4 @@ textarea{
 input.title::placeholder, textarea::placeholder{
     color: #c3c3c3;
 }
+

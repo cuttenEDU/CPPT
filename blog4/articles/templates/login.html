@@ -3,6 +3,7 @@
     <head>
         <title>Django Public Blog - Войти</title>
         <link rel="stylesheet" href="/static/css/article.css">
+        <link rel="stylesheet" href="/static/css/create_post.css">
     </head>
     <body>
         <div class="header">
@@ -13,10 +14,10 @@
             <h1 class="center_pos">Вход</h1>
             <form method="POST" class="center_pos">{% csrf_token %}
                 <h2>
-                    <input type="text" name="username" placeholder="Имя пользователя" value="{{ form.username }}">
+                    <input type="text" name="username" placeholder="Имя пользователя" value="{{ form.username }}" class="textinput">
                 </h2>
                 <h3>
-                    <input type="password" name="password" placeholder="Пароль" value="{{ form.password }}">
+                    <input type="password" name="password" placeholder="Пароль" value="{{ form.password }}" class="textinput">
                 </h3>
                 <h5>
                     <input type="submit" value="Войти">
