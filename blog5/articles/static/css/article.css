@@ -5,6 +5,7 @@ body {
 
 }
 
+
 div {
     display: block;
 }
@@ -26,30 +27,40 @@ div {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .article {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-.post-title {
+a {
     color: #ffffff;
 }
 
 .article-info {
-    float: left;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.article-author {
-    float: left;
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.article-created-date {
-    float: right;
+.one-post.folded .article-author {
+    display: none;
 }
+
+.one-post.folded .article-created-date {
+    display: none;
+}
+
+.one-post.folded .article-text {
+    display: none;
+}
+
+
 

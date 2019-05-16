@@ -29,7 +29,6 @@ groupmates = [
     }
 ]
 
-
 def filter_by_grade(grade):
     good_groupmates = []
     for groupmate in groupmates:
@@ -40,8 +39,6 @@ def filter_by_grade(grade):
         if total_mark / len(marks) > grade:
             good_groupmates.append(groupmate)
     return good_groupmates
-
-
 
 def print_students(students):
     print u"Имя студента".ljust(15), \
@@ -55,6 +52,5 @@ def print_students(students):
             str(student["age"]).ljust(8), \
             str(student["marks"]).ljust(20)
     print "\n"
-
 
 print_students(filter_by_grade(4))
