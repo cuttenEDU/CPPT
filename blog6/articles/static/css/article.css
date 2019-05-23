@@ -8,11 +8,15 @@ div {
     display: block;
 }
 
+.header{
+    margin-left: 1.75%;
+    margin-bottom: 1%;
+    width: auto;
+}
+
+
 .header img {
     width: 318px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
 }
 
 /*.header a {*/
@@ -59,8 +63,12 @@ a {
     display: none;
 }
 
-.one-post{
-    position:relative;
+.one-post {
+    position: relative;
+    padding-bottom: 0.2%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin: 1%
 }
 
 .one-post-shadow {
@@ -71,4 +79,5 @@ a {
     width: 100%;
     background: black;
     z-index: -1;
+    opacity: 0;
 }
