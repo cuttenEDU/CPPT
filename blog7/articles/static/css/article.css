@@ -45,10 +45,10 @@ a {
     justify-content: space-between;
 }
 
-.article-header{
+
+.article-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .one-post.folded .article-author {

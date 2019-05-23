@@ -7,6 +7,7 @@ for (var i = 0; i < foldBtns.length; i++) {
         } else {
             event.target.innerHTML = "Развернуть";
             event.target.parentElement.parentElement.className = "one-post folded"
+
         }
     });
 }

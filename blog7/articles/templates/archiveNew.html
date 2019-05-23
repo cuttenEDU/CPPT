@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Архив всех статей</title>
+    <link rel="stylesheet" href="/static/css/articleNew.css" type="text/css">
+</head>
+<body>
+<div class="header">
+    <p class="center_pos"> <img src="static/img/finallogo.png" id="himg" width="20%"/></p>
+    <div class="info">
+        <h1>Коллективный блог</h1>
+        <a href="/auth" class="auth">Вход</a>
+        <a href="/registration">Регистрация</a><br>
+
+    </div>
+    <div class="imgs">
+        <img src="static/img/file2.png" class="img1"/>
+        <img src="static/img/file2.png" class="img2"/>
+        <img src="static/img/file2.png" class="img3"/>
+    </div>
+
+</div>
+    <div class="archive">
+        {% for post in posts %}
+        <div class="one-post">
+
+            <div class="article-header">
+                <a href="/article/{{post.id}}/" class="post-title">
+                    <h1>{{ post.title }}</h1>
+                </a>
+                <a href="javascript:void(0)" class="fold-button">
+                    <h3>свернуть</h3>
+                </a>
+            </div>
+            <div class="article-info">
+
+                <div class="article-author"><h2>{{ post.author.username }}</h2></div>
+                <div class="article-created-date"><h2>{{ post.created_date }}</h2></div>
+
+            </div>
+            <p class="article-text">{{ post.get_excerpt }}</p>
+            <div class="one-post-shadow"></div>
+        </div>
+        {% endfor %}
+
+
+    </div>
+
+<script src="/static/js/helloworld.js"></script>
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/fold-post.js"></script>
+<script src="/static/js/highlight-post.js"></script>
+<script src="/static/js/parallax.js"></script>
+</body>
+</html>
