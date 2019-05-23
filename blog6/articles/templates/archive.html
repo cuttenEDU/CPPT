@@ -13,7 +13,7 @@
 <div class="archive">
     {% for post in posts %}
     <div class="one-post">
-        <div class="one-post-shadow"></div>
+
         <div class="article-header">
             <a href="/article/{{post.id}}/" class="post-title">
                 <h2>{{ post.title }}</h2>
@@ -27,8 +27,10 @@
             <div class="article-created-date">{{ post.created_date }}</div>
         </div>
         <p class="article-text">{{ post.get_excerpt }}</p>
+        <div class="one-post-shadow"></div>
     </div>
     {% endfor %}
+
 
 </div>
 <script src="/static/js/helloworld.js"></script>

@@ -2,9 +2,7 @@ body {
     background: #1abc9c;
     font-family: Tahoma, Arial, sans-serif;
     color: #ffffff;
-
 }
-
 
 div {
     display: block;
@@ -17,11 +15,10 @@ div {
     margin-bottom: 5%;
 }
 
-
-.header a {
-    float: right;
-    text-align: right;
-}
+/*.header a {*/
+/*    float: right;*/
+/*    text-align: right;*/
+/*}*/
 
 .archive {
     width: 1200px;
@@ -60,6 +57,10 @@ a {
 
 .one-post.folded .article-text {
     display: none;
+}
+
+.one-post{
+    position:relative;
 }
 
 .one-post-shadow {
